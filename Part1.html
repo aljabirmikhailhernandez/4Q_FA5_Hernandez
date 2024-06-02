@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 1</title>
+</head>
+<body>
+    <script>
+        function check() {
+            do {
+                var bru = prompt("Enter: ");
+            } while (isNaN(bru));
+
+            var num = parseInt(bru);
+            document.write("Number Inputted: " + num + "</br>");
+
+            if (num%2 == 0) {
+                for (x=num; x>0; x--) {
+                    for (y=x; y>0; y--) {
+                        document.write(x + " ");
+                    }
+                    document.write("</br>");
+                }    }
+            else {
+                for (a=num; a>0; a--) {
+                    for (b=num; b>0; b--) {
+                        document.write(a + " ");
+                    }
+                    document.write("</br>");
+                }    }   }
+        check();
+    </script>
+</body>
+</html>
